@@ -52,7 +52,7 @@ const Hero = () => {
 							</Box>
 						</Box>
 					</Grid>
-					<Grid item lg={7} sx={{ position: " absolute", right: "30px", height: "100%", width: "70%" }}>
+					<Grid item lg={7.3} sx={{ position: " absolute", right: "0px", height: "100%", width: "100%" }}>
 						<img src={HeroImage} alt="" style={{ width: "100%", height: "100%" }} />
 					</Grid>
 				</Grid>
