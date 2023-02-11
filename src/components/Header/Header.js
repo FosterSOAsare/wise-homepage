@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Container, Grid, Typography, Button } from "@mui/material";
+import { Box, Container, Grid, Button } from "@mui/material";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import style from "../../App.style";
 
