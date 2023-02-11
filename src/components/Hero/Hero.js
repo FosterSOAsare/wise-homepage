@@ -6,7 +6,7 @@ import SearchIcon from "@mui/icons-material/Search";
 
 const Hero = () => {
 	return (
-		<Box sx={{ backgroundColor: "#F5F7F7", width: "100%", height: "auto", position: "relative" }}>
+		<Box sx={{ backgroundColor: "#ffffff", width: "100%", height: "auto", position: "relative" }}>
 			<Container maxWidth="lg" sx={{ height: "700px", paddingRight: 0 }}>
 				<Grid container sx={{ width: "100%", height: "100%", alignItems: "center" }}>
 					<Grid item lg={4} sx={{ height: "70%" }}>
