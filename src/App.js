@@ -6,6 +6,7 @@ import Trade from "./components/Trade/Trade";
 import GetPaid from "./components/GetPaid/GetPaid";
 import Collaboration from "./components/Collaboration/Collaboration";
 import Pros from "./components/Pros/Pros";
+import Features from "./components/Features/Features";
 
 function App() {
 	return (
@@ -16,6 +17,7 @@ function App() {
 			<GetPaid />
 			<Collaboration />
 			<Pros />
+			<Features />
 		</Box>
 	);
 }
