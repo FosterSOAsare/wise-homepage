@@ -5,6 +5,7 @@ import Hero from "./components/Hero/Hero";
 import Trade from "./components/Trade/Trade";
 import GetPaid from "./components/GetPaid/GetPaid";
 import Collaboration from "./components/Collaboration/Collaboration";
+import Pros from "./components/Pros/Pros";
 
 function App() {
 	return (
@@ -14,6 +15,7 @@ function App() {
 			<Trade />
 			<GetPaid />
 			<Collaboration />
+			<Pros />
 		</Box>
 	);
 }

@@ -7,7 +7,7 @@ import style from "../../App.style";
 
 const Collaboration = () => {
 	return (
-		<Box sx={{ paddingTop: "100px" }}>
+		<Box sx={{ paddingBlock: "100px" }}>
 			<Container maxWidth="lg">
 				<Box>
 					<Typography variant="h3" sx={{ textAlign: "center", fontSize: "26px", fontWeight: "bold", color: "#37517E", marginBottom: "20px" }}>
