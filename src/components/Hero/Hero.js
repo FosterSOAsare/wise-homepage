@@ -3,6 +3,7 @@ import { Box, Container, Grid, Typography, Button } from "@mui/material";
 import HeroImage from "../../assets/images/hero.png";
 import LockIcon from "@mui/icons-material/Lock";
 import SearchIcon from "@mui/icons-material/Search";
+import style from "../../App.style";
 
 const Hero = () => {
 	return (
@@ -10,7 +11,7 @@ const Hero = () => {
 			<Container maxWidth="lg" sx={{ height: "700px", paddingRight: 0 }}>
 				<Grid container sx={{ width: "100%", height: "100%", alignItems: "center" }}>
 					<Grid item lg={4} sx={{ height: "70%" }}>
-						<Typography variant="h2" sx={{ fontSize: "42px", fontWeight: "bold", color: "#37517E" }}>
+						<Typography variant="h2" sx={style.hero__title}>
 							The{" "}
 							<Typography variant="span" sx={{ color: "#00A2DD" }}>
 								no-stress{" "}
@@ -21,13 +22,11 @@ const Hero = () => {
 							</Typography>
 						</Typography>
 
-						<Typography variant="p" sx={{ color: "#5d7079", marginTop: "20px", display: "block", lineHeight: "25px" }}>
+						<Typography variant="p" sx={style.hero__desc}>
 							Business banking without the high rates, hidden charges, and monthly fees. Pay employees, get paid and manage your cash flow overseas — in one place.
 						</Typography>
 
-						<Button
-							variant="contained"
-							sx={{ background: "#008FC9", marginTop: "20px", height: "45px", borderRadius: "2px", paddingInline: "28px", textTransform: "none", fontWeight: "bold" }}>
+						<Button variant="contained" sx={style.cta__button}>
 							Set up in minutes
 						</Button>
 

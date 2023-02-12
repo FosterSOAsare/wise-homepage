@@ -4,6 +4,7 @@ import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Trade from "./components/Trade/Trade";
 import GetPaid from "./components/GetPaid/GetPaid";
+import Collaboration from "./components/Collaboration/Collaboration";
 
 function App() {
 	return (
@@ -12,6 +13,7 @@ function App() {
 			<Hero />
 			<Trade />
 			<GetPaid />
+			<Collaboration />
 		</Box>
 	);
 }
