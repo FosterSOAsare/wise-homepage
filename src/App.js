@@ -8,9 +8,10 @@ import Collaboration from "./components/Collaboration/Collaboration";
 import Pros from "./components/Pros/Pros";
 import Features from "./components/Features/Features";
 import Faqs from "./components/Faqs/Faqs";
+import Footer from "./components/Footer/Footer";
 function App() {
 	return (
-		<Box sx={{ minHeight: "100vh", paddingBottom: "50vh" }}>
+		<Box sx={{ minHeight: "100vh" }}>
 			<Header />
 			<Hero />
 			<Trade />
@@ -19,6 +20,7 @@ function App() {
 			<Pros />
 			<Features />
 			<Faqs />
+			<Footer />
 		</Box>
 	);
 }
