@@ -7,7 +7,7 @@ import GetPaid from "./components/GetPaid/GetPaid";
 import Collaboration from "./components/Collaboration/Collaboration";
 import Pros from "./components/Pros/Pros";
 import Features from "./components/Features/Features";
-
+import Faqs from "./components/Faqs/Faqs";
 function App() {
 	return (
 		<Box sx={{ minHeight: "100vh", paddingBottom: "50vh" }}>
@@ -18,6 +18,7 @@ function App() {
 			<Collaboration />
 			<Pros />
 			<Features />
+			<Faqs />
 		</Box>
 	);
 }
