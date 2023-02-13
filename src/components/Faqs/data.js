@@ -66,7 +66,7 @@ const accordionData = [
 	},
 	{
 		question: "Does my recipient need an account to receive money?",
-		answer: `No. When you send money with Wise Business it goes directly into your recipient's bank account.`,
+		answer: <Typography>No. When you send money with Wise Business it goes directly into your recipient's bank account.</Typography>,
 	},
 ];
 
