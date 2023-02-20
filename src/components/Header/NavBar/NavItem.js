@@ -16,7 +16,9 @@ const NavItem = ({ name, image, links, desc, active }) => {
 			}
 		}
 		document.addEventListener("mousemove", displayPopup);
+		return document.removeEventListener("mousemove", displayPopup);
 	}, []);
+
 	let buttonRef = useRef(null);
 	return (
 		<Box ref={buttonRef} sx={{ marginRight: "10px", position: "relative" }}>
