@@ -1,9 +1,9 @@
 import React from "react";
 import { Box, Container, Grid, Button } from "@mui/material";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import style from "../../App.style";
 
-let nav = ["Account", "Platform", "Fees", "About"];
+import NavBar from "./NavBar/NavBar";
+
 const Header = () => {
 	return (
 		<Box sx={{ backgroundColor: "#37517E", height: "80px" }}>
@@ -46,14 +46,8 @@ const Header = () => {
 							Business
 						</Button>
 					</Grid>
-					<Grid item lg={6} sx={{}}>
-						{nav.map((e, index) => {
-							return (
-								<Button key={index} sx={{ ...style.button, marginRight: "10px", color: "white" }} endIcon={<KeyboardArrowDownIcon />}>
-									{e}
-								</Button>
-							);
-						})}
+					<Grid item lg={6} sx={{ justifyContent: "flex-start", display: "flex" }}>
+						<NavBar />
 						<Button
 							variant="text"
 							sx={{

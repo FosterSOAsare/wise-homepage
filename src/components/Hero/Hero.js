@@ -10,7 +10,7 @@ const Hero = () => {
 		<Box sx={{ backgroundColor: "#ffffff", width: "100%", height: "auto", position: "relative" }}>
 			<Container maxWidth="lg" sx={{ height: "700px", paddingRight: 0 }}>
 				<Grid container sx={{ width: "100%", height: "100%", alignItems: "center" }}>
-					<Grid item lg={4} sx={{ height: "70%" }}>
+					<Grid item md={4} sx={{ height: "70%" }}>
 						<Typography variant="h2" sx={style.hero__title}>
 							The{" "}
 							<Typography variant="span" sx={{ color: "#00A2DD" }}>
@@ -51,7 +51,7 @@ const Hero = () => {
 							</Box>
 						</Box>
 					</Grid>
-					<Grid item lg={7.3} sx={{ position: " absolute", right: "0px", height: "100%", width: "100%" }}>
+					<Grid item md={7.3} sx={{ position: " absolute", right: "0px", height: "100%", width: "100%" }}>
 						<img src={HeroImage} alt="" style={{ width: "100%", height: "100%" }} />
 					</Grid>
 				</Grid>
