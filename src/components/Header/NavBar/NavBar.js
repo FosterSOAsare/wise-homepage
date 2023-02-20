@@ -1,18 +1,13 @@
 import React from "react";
-import style from "../../../App.style";
 import navData from "./NavbarData";
-import { Button, Box } from "@mui/material";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import { Box } from "@mui/material";
+
+import NavItem from "./NavItem";
 const NavBar = () => {
 	return (
-		<Box sx={{ width: "auto" }}>
+		<Box sx={{ width: "auto", display: "flex", alignItems: "center" }}>
 			{navData.map((e, index) => {
-				return (
-					<Button key={index} sx={{ ...style.button, marginRight: "10px", color: "white", position: "relative" }} endIcon={<KeyboardArrowDownIcon />}>
-						{e.name}
-						{e.element}
-					</Button>
-				);
+				return <NavItem key={index} {...e} />;
 			})}
 		</Box>
 	);
