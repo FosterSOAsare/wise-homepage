@@ -26,13 +26,13 @@ const Footer = () => {
 						<Typography variant="h3" sx={{ fontSize: "14px", fontWeight: "600", marginBottom: "20px", color: "white" }}>
 							Follow us
 							<Box sx={{ marginTop: "20px", display: "flex", gap: "20px" }}>
-								<a href="https://www.facebook.com/wise" style={{ color: "white" }}>
+								<a href="https://www.facebook.com/wise" style={{ color: "white" }} target="_blank" rel="noreferrer">
 									<FacebookIcon />
 								</a>
-								<a href="https://twitter.com/wise" style={{ color: "white" }}>
+								<a href="https://twitter.com/wise" style={{ color: "white" }} target="_blank" rel="noreferrer">
 									<TwitterIcon />
 								</a>
-								<a href="https://www.instagram.com/wiseaccount" style={{ color: "white" }}>
+								<a href="https://www.instagram.com/wiseaccount" style={{ color: "white" }} target="_blank" rel="noreferrer">
 									<InstagramIcon />
 								</a>
 							</Box>
@@ -42,7 +42,7 @@ const Footer = () => {
 
 				<Grid container spacing={2} sx={{ marginBlock: "20px 50px" }}>
 					<Grid item lg={3}>
-						<a href="https://wise.com/us">
+						<a href="https://wise.com/us" target="_blank" rel="noreferrer">
 							<img src="https://wise.com/public-resources/assets/logos/wise/brand_logo_inverse.svg" alt="" style={{ marginRight: "25px" }} />
 						</a>
 					</Grid>
@@ -74,7 +74,7 @@ const Footer = () => {
 				</Typography>
 				<Typography variant="p" sx={{ display: "block", textAlign: "center", maxWidth: "700px", fontSize: "13px", marginInline: "auto", color: "white", marginTop: "20px" }}>
 					Wise US Inc is authorized to operate in {""}
-					<a href="https://wise.com/us/legal/state-licenses" style={{ color: "white" }}>
+					<a href="https://wise.com/us/legal/state-licenses" style={{ color: "white", textDecoration: "underline" }} target="_blank" rel="noreferrer">
 						most states
 					</a>
 					. In the other states, the program is sponsored by Community Federal Savings Bank, to which we're a service provider.

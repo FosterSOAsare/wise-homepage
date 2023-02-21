@@ -18,11 +18,13 @@ const GetPaid = () => {
 							With Wise Business, you can get local bank details for 10 different currencies. Give them to your customers for an easy, free way to get paid. 50% of payments are instant
 							or arrive in an hour.
 						</Typography>
-						<Button
-							variant="contained"
-							sx={{ background: "#008FC9", marginTop: "20px", height: "45px", borderRadius: "2px", paddingInline: "28px", textTransform: "none", fontWeight: "bold" }}>
-							Get started for free
-						</Button>
+						<a href="https://wise.com/register?profileType=BUSINESS" target="_blank" rel="noreferrer">
+							<Button
+								variant="contained"
+								sx={{ background: "#008FC9", marginTop: "20px", height: "45px", borderRadius: "2px", paddingInline: "28px", textTransform: "none", fontWeight: "bold" }}>
+								Get started for free
+							</Button>
+						</a>
 
 						<Box sx={{ marginTop: "25px", display: "flex", width: "80%", gap: "10px", justifyContent: "space-between" }}>
 							<Box sx={{ width: "48%" }}>
@@ -41,9 +43,11 @@ const GetPaid = () => {
 								</Typography>
 								<Typography variant="p" sx={{ lineHeight: "25px", fontWeight: "400", color: "#5d7079" }}>
 									Add your local bank details to {""}
-									<Typography variant="span" sx={{ display: "inline", color: "#00a2dd", fontWeight: "bold", textDecoration: "underline", "&:hover": { cursor: "pointer" } }}>
+									<a
+										href="https://wise.com/us/invoice-templates/"
+										style={{ display: "inline", color: "#00a2dd", fontWeight: "bold", textDecoration: "underline", "&:hover": { cursor: "pointer" } }}>
 										invoice templates
-									</Typography>
+									</a>
 									{""} to get paid on time and for free — like a local.
 								</Typography>
 							</Box>

@@ -72,7 +72,7 @@ const Trade = () => {
 							Paypal.
 						</Typography>
 
-						<a href="https://wise.com/register?profileType=BUSINESS" style={{ textDecoration: "none" }} target="_blank" rel="noreferrer">
+						<a href="https://wise.com/register?profileType=BUSINESS" target="_blank" rel="noreferrer">
 							<Button
 								variant="outlined"
 								sx={{

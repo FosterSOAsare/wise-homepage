@@ -44,3 +44,7 @@
 .popup.active {
 	display: block;
 }
+
+a {
+	text-decoration: none;
+}

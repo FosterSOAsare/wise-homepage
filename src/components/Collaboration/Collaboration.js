@@ -39,16 +39,18 @@ const Collaboration = () => {
 						</Typography>
 					</Grid>
 				</Grid>
-				<Button
-					variant="contained"
-					sx={{
-						marginInline: "auto",
-						display: "block",
-						marginTop: "50px",
-						...style.cta__button,
-					}}>
-					Get started for free
-				</Button>
+				<a href="https://wise.com/register?profileType=BUSINESS" target="_blank" rel="noreferrer">
+					<Button
+						variant="contained"
+						sx={{
+							marginInline: "auto",
+							display: "block",
+							marginTop: "50px",
+							...style.cta__button,
+						}}>
+						Get started for free
+					</Button>
+				</a>
 			</Container>
 		</Box>
 	);

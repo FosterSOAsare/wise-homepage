@@ -27,7 +27,7 @@ const Features = () => {
 				<Feature desc="Get everything you need to bank abroad — including a sort code, IBAN, routing number, and more." heading="Banking alternative" />
 				<Feature heading="Debit card" desc="Unfortunately, this isn’t available where you’re registered. We’re working hard to make it happen" available={false} />
 			</Grid>
-			<a href="https://wise.com/register/?profileType=BUSINESS" target="_blank" rel="noreferrer" style={{ textDecoration: "none" }}>
+			<a href="https://wise.com/register/?profileType=BUSINESS" target="_blank" rel="noreferrer">
 				<Button variant="contained" sx={{ ...style.cta__button, marginTop: "30px", display: "block" }}>
 					Get started
 				</Button>

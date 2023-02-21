@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Box, Grid, TextField, Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
+
 const CssTextField = styled(TextField)({
 	"& .MuiOutlinedInput-root": {
 		width: "100%",
@@ -42,7 +43,7 @@ const InputField = ({ value, handleInput, text, type }) => {
 								border: "none",
 							},
 						}}
-						value={value[type].toString().substring(0)}
+						value={value[type].toString()}
 						type="number"
 						onFocus={() => setFocus(true)}
 						onBlur={() => setFocus(false)}

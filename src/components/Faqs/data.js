@@ -28,11 +28,13 @@ const accordionData = [
 					<br />
 					This is the lowest we can charge to cover costs, and we're committed to getting the fee down over time.
 				</Typography>
-				<Button
-					variant="text"
-					sx={{ textTransform: "none", display: "block", marginTop: "20px", padding: "0", color: "#00a1db", textDecoration: "underline", fontSize: "16px", fontWeight: "600" }}>
-					Learn more about our pricing →
-				</Button>
+				<a href="https://wise.com/us/business/pricing-and-coverage" target="_blank" rel="noreferrer">
+					<Button
+						variant="text"
+						sx={{ textTransform: "none", display: "block", marginTop: "20px", padding: "0", color: "#00a1db", textDecoration: "underline", fontSize: "16px", fontWeight: "600" }}>
+						Learn more about our pricing →
+					</Button>
+				</a>
 			</>
 		),
 	},
@@ -43,24 +45,26 @@ const accordionData = [
 				We use the real exchange rate plus a small conversion fee when you convert a balance in your account to a different currency.
 				<br />
 				<br />A full list of our currencies and pricing is available
-				<Button
-					variant="text"
-					sx={{
-						textTransform: "none",
-						padding: "0",
-						color: "#00a1db",
-						textDecoration: "underline",
-						fontSize: "14px",
-						fontWeight: "600",
-						display: "inline-block",
-						marginTop: "-2px",
-						"&:hover": {
+				<a href="https://wise.com/us/business/pricing-and-coverage" target="_blank" rel="noreferrer">
+					<Button
+						variant="text"
+						sx={{
+							textTransform: "none",
+							padding: "0",
+							color: "#00a1db",
 							textDecoration: "underline",
-							backgroundColor: "transparent",
-						},
-					}}>
-					here →
-				</Button>
+							fontSize: "14px",
+							fontWeight: "600",
+							display: "inline-block",
+							marginTop: "-2px",
+							"&:hover": {
+								textDecoration: "underline",
+								backgroundColor: "transparent",
+							},
+						}}>
+						here →
+					</Button>
+				</a>
 			</Typography>
 		),
 	},

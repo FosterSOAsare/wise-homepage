@@ -26,7 +26,7 @@ const Hero = () => {
 							Business banking without the high rates, hidden charges, and monthly fees. Pay employees, get paid and manage your cash flow overseas — in one place.
 						</Typography>
 
-						<a href="https://wise.com/register?profileType=BUSINESS" style={{ textDecoration: "none", color: "white" }}>
+						<a href="https://wise.com/register?profileType=BUSINESS" style={{ textDecoration: "none", color: "white" }} target="_blank" rel="noreferrer">
 							<Button variant="contained" sx={style.cta__button}>
 								Set up in minutes
 							</Button>

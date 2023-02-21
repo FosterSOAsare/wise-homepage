@@ -24,9 +24,11 @@ const Pros = () => {
 								Move money between currencies in seconds, always with the real exchange rate and without high conversion fees. See up to 54 currencies from one easy to use account.
 							</Typography>
 
-							<Button variant="contained" sx={style.cta__button}>
-								Get started for free
-							</Button>
+							<a href="https://wise.com/register?profileType=BUSINESS" target="_blank" rel="noreferrer">
+								<Button variant="contained" sx={style.cta__button}>
+									Get started for free
+								</Button>
+							</a>
 
 							<Box sx={{ marginTop: "25px", display: "flex", width: "100%", gap: "10px", justifyContent: "space-between" }}>
 								<Box sx={{ width: "48%" }}>
@@ -67,9 +69,11 @@ const Pros = () => {
 								-Alternative Airlines
 							</Typography>
 
-							<Button variant="contained" sx={style.cta__button}>
-								Read case study
-							</Button>
+							<a href="https://wise.com/gb/business/exchange-rates-alternative-airlines-savings" target="_blank" rel="noreferrer">
+								<Button variant="contained" sx={style.cta__button}>
+									Read case study
+								</Button>
+							</a>
 						</Grid>
 					</Grid>
 				</Container>
@@ -86,11 +90,13 @@ const Pros = () => {
 						Our team of experts can help your team scale and grow globally. Get in touch to hear how Wise Business can work for you.
 					</Typography>
 
-					<Button
-						variant="contained"
-						sx={{ ...style.cta__button, backgroundColor: "#2EAD4B", marginInline: "auto", display: "block", "&:hover": { backgroundColor: "#2EAD4B" }, marginTop: "40px" }}>
-						Speak to sales
-					</Button>
+					<a href="https://wise.com/gb/business/contact?utm_medium=bhomepage&utm_campaign=banner" target="_blank" rel="noreferrer">
+						<Button
+							variant="contained"
+							sx={{ ...style.cta__button, backgroundColor: "#2EAD4B", marginInline: "auto", display: "block", "&:hover": { backgroundColor: "#2EAD4B" }, marginTop: "40px" }}>
+							Speak to sales
+						</Button>
+					</a>
 				</Container>
 			</Box>
 		</>
