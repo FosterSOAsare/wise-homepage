@@ -5,8 +5,19 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
 
 const Trade = () => {
-	const [value] = useState(1000);
-	function handleInput(e) {}
+	const [value, setValue] = useState({ send: 0, receive: -4.5 });
+	function handleInput(value, type) {
+		if (value) {
+			// For when there is a dot
+			setValue(() => {
+				if (value) {
+					return { [type === "send" ? "receive" : "send"]: type === "send" ? parseFloat(value) - 4.5 : parseFloat(value) + 4.5, [type]: parseFloat(value) };
+				}
+			});
+			return;
+		}
+		setValue(type === "send" ? { send: 0, receive: -4.5 } : { send: 4.5, receive: 0 });
+	}
 	return (
 		<Box sx={{ width: "100%", height: "470px" }}>
 			<Container maxWidth="lg" sx={{ height: "100%" }}>
@@ -61,24 +72,27 @@ const Trade = () => {
 							Paypal.
 						</Typography>
 
-						<Button
-							variant="outlined"
-							sx={{
-								display: "block",
-								marginTop: "30px",
-								height: "45px",
-								width: "150px",
-								borderRadius: "5px",
-								fontWeight: "bold",
-								border: "2px solid #008FC9",
-								textTransform: "none",
-								"&:hover": {
-									backgroundColor: "#008FC9",
-									color: "white",
-								},
-							}}>
-							Set up for free
-						</Button>
+						<a href="https://wise.com/register?profileType=BUSINESS" style={{ textDecoration: "none" }} target="_blank" rel="noreferrer">
+							<Button
+								variant="outlined"
+								sx={{
+									display: "block",
+									marginTop: "30px",
+									height: "45px",
+									width: "150px",
+									borderRadius: "5px",
+									fontWeight: "bold",
+									border: "2px solid #008FC9",
+									textTransform: "none",
+									fontSize: "16px",
+									"&:hover": {
+										backgroundColor: "#008FC9",
+										color: "white",
+									},
+								}}>
+								Get started
+							</Button>
+						</a>
 					</Grid>
 				</Grid>
 			</Container>

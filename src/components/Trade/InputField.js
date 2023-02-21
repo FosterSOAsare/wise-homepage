@@ -22,7 +22,7 @@ const CssTextField = styled(TextField)({
 	},
 });
 
-const InputField = ({ value, handleInput, text }) => {
+const InputField = ({ value, handleInput, text, type }) => {
 	const [focus, setFocus] = useState(false);
 	return (
 		<Box sx={{ width: "100%", height: "80px" }}>
@@ -34,12 +34,20 @@ const InputField = ({ value, handleInput, text }) => {
 					<CssTextField
 						id="custom-css-outlined-input"
 						size="small"
-						sx={{ width: "100%", fontSize: "50px" }}
-						value={value}
+						sx={{
+							width: "100%",
+							fontSize: "50px",
+							border: "none",
+							"&:focus": {
+								border: "none",
+							},
+						}}
+						value={value[type].toString().substring(0)}
+						type="number"
 						onFocus={() => setFocus(true)}
 						onBlur={() => setFocus(false)}
 						onChange={(e) => {
-							handleInput(e);
+							handleInput(e.target.value, type);
 						}}
 					/>
 				</Grid>
