@@ -8,7 +8,6 @@ let navData = [
 		image: <Payment />,
 		desc: "Discover how 600,000+ business customers globally make and receive international payments.",
 		links: ["Pay Invoices", "Receive money", "Batch payments", "Payroll", "Track expenses"],
-		active: true,
 	},
 	{
 		name: "Platform",

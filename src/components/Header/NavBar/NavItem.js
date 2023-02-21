@@ -16,7 +16,6 @@ const NavItem = ({ name, image, links, desc, active }) => {
 			}
 		}
 		document.addEventListener("mousemove", displayPopup);
-		return document.removeEventListener("mousemove", displayPopup);
 	}, []);
 
 	let buttonRef = useRef(null);

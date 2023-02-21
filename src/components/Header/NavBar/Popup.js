@@ -26,8 +26,9 @@ const Popup = ({ image, links, desc, name }) => {
 			</Box>
 
 			<Box sx={{ width: "100%", background: "#F3F6F8", padding: "40px 30px" }}>
-				{links.map((e) => (
+				{links.map((e, index) => (
 					<Typography
+						key={index}
 						variant="p"
 						sx={{
 							display: "block",
