@@ -7,8 +7,8 @@ import style from "../../App.style";
 
 const Hero = () => {
 	return (
-		<Box sx={{ backgroundColor: "#ffffff", width: "100%", height: "auto", position: "relative" }}>
-			<Container maxWidth="lg" sx={{ height: "700px", paddingRight: 0 }}>
+		<Box sx={style.hero}>
+			<Container maxWidth="lg" sx={style.hero__container}>
 				<Grid container sx={{ width: "100%", height: "100%", alignItems: "center" }}>
 					<Grid item md={4} sx={{ height: "70%" }}>
 						<Typography variant="h2" sx={style.hero__title}>
@@ -27,14 +27,14 @@ const Hero = () => {
 						</Typography>
 
 						<a href="https://wise.com/register?profileType=BUSINESS" style={{ textDecoration: "none", color: "white" }} target="_blank" rel="noreferrer">
-							<Button variant="contained" sx={style.cta__button}>
+							<Button variant="contained" sx={{ ...style.cta__button, ...style.hero__cta }}>
 								Set up in minutes
 							</Button>
 						</a>
 
-						<Box sx={{ marginTop: "25px", display: "flex", width: "110%", gap: "10px" }}>
-							<Box>
-								<LockIcon sx={{ display: "block", fontSize: "40px", color: "#37517e", marginBottom: "10px" }} />
+						<Box sx={style.hero__pros}>
+							<Box sx={style.hero__pro}>
+								<LockIcon sx={style.hero__pro__icon} />
 								<Typography variant="p" sx={{ lineHeight: "25px", fontWeight: "400", color: "#5d7079" }}>
 									We safeguard your money in top financial institutions
 									<a
@@ -44,8 +44,8 @@ const Hero = () => {
 									</a>
 								</Typography>
 							</Box>
-							<Box>
-								<SearchIcon sx={{ display: "block", fontSize: "40px", color: "#37517e", marginBottom: "10px" }} />
+							<Box sx={style.hero__pro}>
+								<SearchIcon sx={{ ...style.hero__pro__icon }} />
 								<Typography variant="p" sx={{ lineHeight: "25px", fontWeight: "400", color: "#5d7079" }}>
 									We're an authorized financial services provider
 									<a
@@ -57,7 +57,7 @@ const Hero = () => {
 							</Box>
 						</Box>
 					</Grid>
-					<Grid item md={7.3} sx={{ position: " absolute", right: "0px", height: "100%", width: "100%" }}>
+					<Grid item md={7.3} sx={{ position: " absolute", right: "0px", height: "100%", width: "100%", display: { xs: "none", md: "block" } }}>
 						<img src={HeroImage} alt="" style={{ width: "100%", height: "100%" }} />
 					</Grid>
 				</Grid>

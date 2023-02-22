@@ -5,7 +5,7 @@ import { Box } from "@mui/material";
 import NavItem from "./NavItem";
 const NavBar = () => {
 	return (
-		<Box sx={{ width: "auto", display: "flex", alignItems: "center" }}>
+		<Box sx={{ width: "auto", display: { xs: "none", md: "flex" }, alignItems: "center" }}>
 			{navData.map((e, index) => {
 				return <NavItem key={index} {...e} />;
 			})}

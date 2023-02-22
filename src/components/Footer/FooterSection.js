@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 
 const FooterSection = ({ heading, items }) => {
 	return (
-		<Grid item lg={3} sx={{ color: "white" }}>
+		<Grid item sx={{ color: "white" }} md={3} sm={6} xs={12}>
 			<Typography variant="h3" sx={{ fontSize: "14px", fontWeight: "600", marginBottom: "20px" }}>
 				{heading}
 			</Typography>

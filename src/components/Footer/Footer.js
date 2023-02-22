@@ -16,13 +16,13 @@ const link = {
 };
 const Footer = () => {
 	return (
-		<Box sx={{ height: "800px", background: "#37517E", paddingBlock: "200px" }}>
+		<Box sx={{ height: "auto", minHeight: "800px", background: "#37517E", paddingBlock: "200px" }}>
 			<Container maxWidth="lg">
 				<Grid container spacing={2}>
 					{footerData.map((e, index) => (
 						<FooterSection key={index} {...e} />
 					))}
-					<Grid item lg={3}>
+					<Grid item md={3} sm={6}>
 						<Typography variant="h3" sx={{ fontSize: "14px", fontWeight: "600", marginBottom: "20px", color: "white" }}>
 							Follow us
 							<Box sx={{ marginTop: "20px", display: "flex", gap: "20px" }}>
@@ -41,12 +41,12 @@ const Footer = () => {
 				</Grid>
 
 				<Grid container spacing={2} sx={{ marginBlock: "20px 50px" }}>
-					<Grid item lg={3}>
+					<Grid item md={3} sm={6} xs={12}>
 						<a href="https://wise.com/us" target="_blank" rel="noreferrer">
 							<img src="https://wise.com/public-resources/assets/logos/wise/brand_logo_inverse.svg" alt="" style={{ marginRight: "25px" }} />
 						</a>
 					</Grid>
-					<Grid item lg={3}>
+					<Grid item md={3} sm={6} xs={12}>
 						<a style={link} href="https://wise.com/terms-and-conditions" target="_blank" rel="noreferrer">
 							Legal
 						</a>
@@ -54,7 +54,7 @@ const Footer = () => {
 							Country site map
 						</a>
 					</Grid>
-					<Grid item lg={3}>
+					<Grid item md={3} sm={6} xs={12}>
 						<a style={link} href="https://wise.com/us/legal/privacy-policy" target="_blank" rel="noreferrer">
 							Privacy Policy
 						</a>
@@ -62,7 +62,7 @@ const Footer = () => {
 							Modern slavery statement
 						</a>
 					</Grid>
-					<Grid item lg={3}>
+					<Grid item md={3} sm={6} xs={12}>
 						<a href="https://wise.com/cookie-policy" target="_blank" rel="noreferrer" style={link}>
 							Cookie Policy
 						</a>
