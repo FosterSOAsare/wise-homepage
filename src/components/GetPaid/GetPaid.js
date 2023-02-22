@@ -6,7 +6,7 @@ import style from "../../App.style";
 const GetPaid = () => {
 	return (
 		<Box sx={style.getPaid}>
-			<Container maxWidth="lg" sx={{ paddingBlock: { xs: "40px", md: "80px" } }}>
+			<Container maxWidth="lg" sx={{ paddingBlock: { xs: "40px 80px", md: "0" } }}>
 				<Grid container>
 					<Grid item xs={12} md={6} sx={style.getPaid__textContent}>
 						<Typography variant="h2" sx={{ fontSize: "26px", fontWeight: "bold", color: "#37517E" }}>

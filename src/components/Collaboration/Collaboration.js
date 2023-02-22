@@ -7,20 +7,20 @@ import style from "../../App.style";
 
 const Collaboration = () => {
 	return (
-		<Box sx={{ paddingBlock: "100px" }}>
+		<Box sx={style.collaboration}>
 			<Container maxWidth="lg">
 				<Box>
 					<Typography variant="h3" sx={{ textAlign: "center", fontSize: "26px", fontWeight: "bold", color: "#37517E", marginBottom: "20px" }}>
 						Smarter workforce collaboration
 					</Typography>
-					<Typography variant="p" sx={{ textAlign: "center", width: "60%", display: "block", marginInline: "auto", lineHeight: "25px", opacity: "0.7" }}>
+					<Typography variant="p" sx={style.collaboration__desc}>
 						No more back-and-forth over paying bills, and managing expenses, and cash flow. Give your accountant and team access to Wise, and control their permissions.
 					</Typography>
 					<img src={CollaborationLead} alt="" style={{ width: "100%" }} />
 				</Box>
 
-				<Grid container sx={{ justifyContent: "center", gap: "24px", marginTop: "40px" }} spacing={2}>
-					<Grid item md={4}>
+				<Grid container sx={style.collaboration__pros} spacing={2}>
+					<Grid item sm={4} xs={12}>
 						<img src={Reconcilation} alt="" style={{ display: "block", marginInline: "auto", marginBottom: "20px" }} />
 						<Typography variant="h4" sx={{ textAlign: "center", fontSize: "20px", fontWeight: "bold", marginBottom: "20px", color: "#37517E" }}>
 							Faster reconciliation
@@ -29,7 +29,7 @@ const Collaboration = () => {
 							Connect currency accounts to QuickBooks or Xero in real time to save time on manual admin.
 						</Typography>
 					</Grid>
-					<Grid item md={4}>
+					<Grid item sm={4} xs={12}>
 						<img src={BatchPayment} alt="" style={{ display: "block", marginInline: "auto", marginBottom: "20px" }} />
 						<Typography variant="h4" sx={{ textAlign: "center", fontSize: "20px", fontWeight: "bold", marginBottom: "20px", color: "#37517E" }}>
 							Make batch payments
@@ -39,13 +39,19 @@ const Collaboration = () => {
 						</Typography>
 					</Grid>
 				</Grid>
-				<a href="https://wise.com/register?profileType=BUSINESS" target="_blank" rel="noreferrer">
+				<a
+					href="https://wise.com/register?profileType=BUSINESS"
+					target="_blank"
+					rel="noreferrer"
+					style={{
+						marginTop: "50px",
+						display: "block",
+					}}>
 					<Button
 						variant="contained"
 						sx={{
 							marginInline: "auto",
 							display: "block",
-							marginTop: "50px",
 							...style.cta__button,
 						}}>
 						Get started for free

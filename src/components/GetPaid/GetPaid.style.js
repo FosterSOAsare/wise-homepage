@@ -1,5 +1,5 @@
 const getPaidStyle = {
-	getPaid: { height: { md: "700px", sx: "auto" } },
+	getPaid: { height: { md: "650px", sx: "auto" }, backgroundColor: "#F2F5F7", display: "flex", alignItems: "center", justifyContent: "center" },
 	getPaid__textContent: { order: { xs: "2", md: "1" }, marginTop: { xs: "60px", md: "0" } },
 	getPaid__image: { order: { xs: "1", md: "2" }, display: "flex", justifyContent: "center", alignItems: "center", margin: 0 },
 
