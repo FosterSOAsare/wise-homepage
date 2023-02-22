@@ -16,7 +16,7 @@ const link = {
 };
 const Footer = () => {
 	return (
-		<Box sx={{ height: "auto", minHeight: "800px", background: "#37517E", paddingBlock: "200px" }}>
+		<Box sx={{ height: "auto", minHeight: { md: "800px" }, background: "#37517E", paddingBlock: { md: "200px", xs: "40px" } }}>
 			<Container maxWidth="lg">
 				<Grid container spacing={2}>
 					{footerData.map((e, index) => (

@@ -51,7 +51,7 @@ const GetPaid = () => {
 						</Box>
 					</Grid>
 					<Grid item xs={12} md={6} sx={style.getPaid__image}>
-						<img src={GetPaidImage} alt="" />
+						<img src={GetPaidImage} alt="" style={{ width: "auto" }} />
 					</Grid>
 				</Grid>
 			</Container>
