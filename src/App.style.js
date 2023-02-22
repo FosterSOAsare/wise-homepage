@@ -1,4 +1,6 @@
 import heroStyles from "./components/Hero/Hero.style";
+import getPaidStyle from "./components/GetPaid/GetPaid.style";
+import tradeStyles from "./components/Trade/Trade.style";
 
 const style = {
 	button: {
@@ -12,7 +14,8 @@ const style = {
 		},
 	},
 	...heroStyles,
-
+	...tradeStyles,
+	...getPaidStyle,
 	cta__button: { background: "#008FC9", marginTop: "20px", height: "45px", borderRadius: "2px", paddingInline: "28px", textTransform: "none", fontWeight: "bold" },
 	header__popUp: {
 		position: "absolute",

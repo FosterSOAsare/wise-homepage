@@ -3,10 +3,11 @@ import { Box, Container, Grid, Typography, Button } from "@mui/material";
 import GetPaidImage from "../../assets/images/get-paid.png";
 import { ReactComponent as Invoices } from "../../assets/images/invoices.svg";
 import { ReactComponent as CollectMoneySeamlessly } from "../../assets/images/collect-money.svg";
+import style from "../../App.style";
 
 const GetPaid = () => {
 	return (
-		<Box sx={{ height: "700px", backgroundColor: "#F2F5F7" }}>
+		<Box sx={style.getPaid}>
 			<Container maxWidth="lg" sx={{ padding: "100px 0" }}>
 				<Grid container>
 					<Grid item xs={6}>
