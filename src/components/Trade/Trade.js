@@ -25,7 +25,7 @@ const Trade = () => {
 				<Grid container sx={style.trade__grid__container}>
 					<Grid item sm={5.5} xs={12} sx={style.exchange__area}>
 						<InputField value={value} handleInput={handleInput} type="send" text="You send exactly" />
-						<Box sx={style.line__stroke}>
+						<Box sx={style.fees}>
 							<Box sx={style.dashed__circle}>
 								<HorizontalRuleIcon size="small" sx={{ color: "black", fontSize: "12px" }} />
 							</Box>

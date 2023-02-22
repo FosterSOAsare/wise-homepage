@@ -7,7 +7,7 @@ const tradeStyles = {
 	field__label: { fontSize: "14px", marginBottom: "3px", display: "block", opacity: "0.7" },
 	country__select: { height: "100%", background: "#2E4369", justifyContent: "center", alignItems: "center", display: "flex", width: "100%", color: "white" },
 
-	line__stroke: {
+	fees: {
 		width: "93%",
 		height: "70px",
 		borderLeft: "1px solid #c9cbce",
