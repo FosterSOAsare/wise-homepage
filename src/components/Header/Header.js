@@ -6,7 +6,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 
 import NavBar from "./NavBar/NavBar";
 
-const Header = () => {
+const Header = ({ setShowMenu }) => {
 	return (
 		<Box sx={{ backgroundColor: "#37517E", height: "80px" }}>
 			<Container maxWidth="lg" sx={{ height: "100%" }}>
@@ -85,7 +85,7 @@ const Header = () => {
 							Register
 						</Button>
 						{/* Menu Icon */}
-						<MenuIcon sx={style.menu__icon} />
+						<MenuIcon sx={style.menu__icon} onClick={() => setShowMenu(true)} />
 					</Grid>
 				</Grid>
 			</Container>
