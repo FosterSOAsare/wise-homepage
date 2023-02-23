@@ -27,19 +27,9 @@ const Popup = ({ image, links, desc, name }) => {
 
 			<Box sx={{ width: "100%", background: "#F3F6F8", padding: "40px 30px" }}>
 				{links.map((e, index) => (
-					<Typography
-						key={index}
-						variant="p"
-						sx={{
-							display: "block",
-							marginBottom: "10px",
-							fontWeight: "600",
-							"&:hover": {
-								color: "#00A2DD",
-							},
-						}}>
-						{e}
-					</Typography>
+					<a href={e.link} key={index} variant="p" className="desktop__link">
+						{e.name}
+					</a>
 				))}
 			</Box>
 		</aside>
