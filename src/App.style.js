@@ -4,6 +4,7 @@ import tradeStyles from "./components/Trade/Trade.style";
 import collaborationStyle from "./components/Collaboration/Collaboration.style";
 import prosStyles from "./components/Pros/Pros.style";
 import featuresStyles from "./components/Features/Features.style";
+import phoneMenuStyles from "./components/Header/PhoneMenu/PhoneMenu.style";
 
 const style = {
 	button: {
@@ -16,6 +17,7 @@ const style = {
 			color: "#02B4F9",
 		},
 	},
+	...phoneMenuStyles,
 	...heroStyles,
 	...tradeStyles,
 	...getPaidStyle,

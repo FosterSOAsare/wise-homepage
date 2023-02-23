@@ -53,3 +53,59 @@ body {
 	overflow-x: hidden;
 	width: "100%";
 }
+.phoneMenu__link {
+	display: block;
+	color: white;
+	margin-bottom: 20px;
+	font-weight: bold;
+}
+.desktop__link {
+	display: block;
+	margin-bottom: 10px;
+	font-weight: 600;
+	color: #37517e;
+}
+.desktop__link:hover {
+	color: #008fc9;
+	cursor: pointer;
+}
+.phoneMenu__link:hover {
+	color: #008fc9;
+}
+
+.phoneMenu__link:last-child {
+	margin-bottom: 0;
+}
+
+a.phoneMenu__nav__link {
+	color: white;
+	font-weight: bold;
+}
+.phoneMenu__nav__link:hover {
+	color: #008fc9;
+}
+
+@keyframes slideIn {
+	from {
+		left: -100%;
+	}
+	to {
+		left: 0;
+	}
+}
+
+@keyframes slideOut {
+	from {
+		left: 0;
+	}
+	to {
+		left: -100%;
+	}
+}
+
+.slideIn {
+	animation: slideIn 0.75s forwards;
+}
+.slideOut {
+	animation: slideOut 0.5s forwards;
+}
