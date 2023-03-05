@@ -109,3 +109,9 @@ a.phoneMenu__nav__link {
 .slideOut {
 	animation: slideOut 0.5s forwards;
 }
+
+@media screen and (max-width: 540px) {
+	img.getPaidImg {
+		width: 100%;
+	}
+}
