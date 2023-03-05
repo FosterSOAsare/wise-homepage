@@ -7,7 +7,7 @@ const GetPaid = () => {
 	return (
 		<Box sx={style.getPaid}>
 			<Container maxWidth="lg" sx={{ paddingBlock: { xs: "40px 80px", md: "0" } }}>
-				<Grid container>
+				<Grid container sx={{ width: "100%", height: "auto" }}>
 					<Grid item xs={12} md={6} sx={style.getPaid__textContent}>
 						<Typography variant="h2" sx={{ fontSize: "26px", fontWeight: "bold", color: "#37517E" }}>
 							Get paid faster.
@@ -51,7 +51,7 @@ const GetPaid = () => {
 						</Box>
 					</Grid>
 					<Grid item xs={12} md={6} sx={style.getPaid__image}>
-						<img src={GetPaidImage} alt="" style={{ width: "auto" }} />
+						<img src={GetPaidImage} alt="" className="getPaidImg" />
 					</Grid>
 				</Grid>
 			</Container>
