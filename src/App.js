@@ -17,12 +17,12 @@ import { initializeApp } from "firebase/app";
 function App() {
 	useEffect(() => {
 		const firebaseConfig = {
-			apiKey: "AIzaSyARNM0B31n13s5dkayNViAJ4CPBqxYBIN8",
-			authDomain: "wise-ef84b.firebaseapp.com",
-			projectId: "wise-ef84b",
-			storageBucket: "wise-ef84b.appspot.com",
-			messagingSenderId: "1067977126262",
-			appId: "1:1067977126262:web:f7ef2c2a99486274890a57",
+			apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
+			authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
+			projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
+			storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+			messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+			appId: process.env.REACT_APP_ID,
 		};
 
 		// Initialize Firebase
