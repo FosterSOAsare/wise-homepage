@@ -8,7 +8,7 @@ import CloseIcon from "@mui/icons-material/Close";
 
 const PhoneMenu = ({ setShowMenu, showMenu }) => {
 	return (
-		<Box sx={style.phoneMenu} className={showMenu ? "slideIn" : showMenu === false ? "slideOut" : ""}>
+		<Box sx={{ ...style.phoneMenu, left: showMenu ? "0%" : "-100%" }}>
 			<Box sx={style.phoneMenu__top}>
 				<BrandFlag />
 				<CloseIcon sx={{ color: "#00A2DD" }} onClick={() => setShowMenu(false)} />

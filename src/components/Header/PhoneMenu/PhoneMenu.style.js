@@ -8,7 +8,7 @@ const phoneMenuStyles = {
 		zIndex: "4",
 		top: "0",
 		left: "-100%",
-		transition: "left 0.5s ease-in-out",
+		transition: "all 0.5s ease-in-out",
 	},
 	phoneMenu__top: {
 		width: "100%",

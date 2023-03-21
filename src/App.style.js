@@ -43,6 +43,17 @@ const style = {
 	active: {
 		display: "block",
 	},
+	hero__left__btn: {
+		marginInline: "20px",
+		height: "30px",
+		opacity: "0.7",
+		width: "1px",
+
+		"&:hover": {
+			color: "#02B4F9",
+			background: "transparent",
+		},
+	},
 };
 
 export default style;

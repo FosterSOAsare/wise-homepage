@@ -85,33 +85,9 @@ a.phoneMenu__nav__link {
 	color: #008fc9;
 }
 
-@keyframes slideIn {
-	from {
-		left: -100%;
-	}
-	to {
-		left: 0;
-	}
-}
-
-@keyframes slideOut {
-	from {
-		left: 0;
-	}
-	to {
-		left: -100%;
-	}
-}
-
-.slideIn {
-	animation: slideIn 0.75s forwards;
-}
-.slideOut {
-	animation: slideOut 0.5s forwards;
-}
-
 @media screen and (max-width: 540px) {
-	img.getPaidImg {
+	img.getPaidImg,
+	img.pro__image {
 		width: 100%;
 	}
 }

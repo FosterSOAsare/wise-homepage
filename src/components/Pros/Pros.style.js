@@ -1,6 +1,6 @@
 const prosStyles = {
 	pros: { height: "auto", backgroundColor: "#F2F5F7", paddingBlock: "100px" },
-	pros__container: { height: { md: "420px", xs: "auto" }, paddingRight: 0 },
+	pros__container: { height: { md: "420px", xs: "auto" } },
 	pros__grid__container: { width: "100%", height: "auto", alignItems: "flex-start", gap: "20px" },
 	pro__grid__image: { height: { md: "100%", xs: "300px" }, width: "100%", display: "flex", justifyContent: "center" },
 	pros__title: {
