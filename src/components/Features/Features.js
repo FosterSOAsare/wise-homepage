@@ -17,7 +17,7 @@ const Features = () => {
 				</Typography>
 				<Button
 					variant="outlined"
-					endIcon={<KeyboardArrowDown sx={{ position: "relative", top: "5px" }} />}
+					endIcon={<KeyboardArrowDown sx={{ position: "relative" }} />}
 					sx={{ marginLeft: "10px", textTransform: "none", borderColor: "#B5B7BA", opacity: "0.7", color: "black", height: "50px" }}>
 					United States
 				</Button>

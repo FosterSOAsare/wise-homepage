@@ -7,7 +7,7 @@ import style from "../../App.style";
 
 const Hero = () => {
 	return (
-		<Box sx={style.hero}>
+		<Box sx={{ ...style.hero, paddingTop: "70px" }}>
 			<Container maxWidth="lg" sx={style.hero__container}>
 				<Grid container sx={{ width: "100%", height: "100%", alignItems: "center" }}>
 					<Grid item md={4} sx={{ height: "70%" }}>

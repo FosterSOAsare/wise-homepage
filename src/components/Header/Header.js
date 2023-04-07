@@ -11,7 +11,7 @@ const Header = ({ setShowMenu }) => {
 	const isSmallScreen = useMediaQuery((theme) => theme.breakpoints.down("ss"));
 	const isMediumScreen = useMediaQuery((theme) => theme.breakpoints.down("md"));
 	return (
-		<Box sx={{ backgroundColor: "#37517E", height: "80px" }}>
+		<Box sx={{ backgroundColor: "#37517E", height: "80px", position: "fixed", top: 0, left: 0, width: "100%", zIndex: 4 }}>
 			<Container maxWidth="lg" sx={{ height: "100%" }}>
 				<Grid container sx={{ justifyContent: "space-between", alignItems: "center", height: "100%" }}>
 					<Grid item lg={4} sx={{ alignItems: "center", justifyContent: "flex-start", display: { xs: "none", ss: "flex" } }}>
