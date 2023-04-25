@@ -6,18 +6,36 @@ import HorizontalRuleIcon from "@mui/icons-material/HorizontalRule";
 import style from "../../App.style";
 
 const Trade = () => {
-	const [value, setValue] = useState({ send: 0, receive: -4.5 });
+	const [value, setValue] = useState({ send: 0, receive: 0 });
+	const rate = 4.5;
+
+	//  Check to see if the value's last character is '.' ,
+	//  if it is  '.' , check to see if there is a previous fullstop character
+	// 	if no , add '.' to the end of the parsedValue else return the parsedValue
+	// Else return parsedValue
+	function checkFullStops(value, parsedValue) {
+		return value.endsWith(".") ? (parsedValue.toString().includes(".") ? parsedValue : `${parsedValue}.`) : parsedValue;
+	}
 	function handleInput(value, type) {
-		if (value) {
-			// For when there is a dot
-			setValue(() => {
-				if (value) {
-					return { [type === "send" ? "receive" : "send"]: type === "send" ? parseFloat(value) - 4.5 : parseFloat(value) + 4.5, [type]: parseFloat(value) };
-				}
-			});
+		if (!/^[0-9.]+$/.test(value)) {
+			// Strip last character if the last character is not a number
+			value = value.substr(0, value.length - 1);
+		}
+		// Parse float the value and use it for calculations
+		let parsedValue = parseFloat(value);
+
+		// Prevent seeing NaN after conversion if value is empty string''
+		if (!value || value === 0) {
+			setValue({ send: 0, receive: 0 });
 			return;
 		}
-		setValue(type === "send" ? { send: 0, receive: -4.5 } : { send: 4.5, receive: 0 });
+
+		// Do claculations with the rate and after that and set the values
+		// Also check to make sure that none of the fields receives a value less than 0
+		setValue({
+			send: type === "send" ? checkFullStops(value, parsedValue) : parsedValue + rate,
+			receive: type === "receive" ? checkFullStops(value, parsedValue) : parsedValue - rate > 0 ? parsedValue - rate : 0,
+		});
 	}
 	return (
 		<Box sx={style.trade}>

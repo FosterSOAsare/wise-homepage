@@ -45,7 +45,7 @@ const InputField = ({ value, handleInput, text, type }) => {
 							},
 						}}
 						value={value[type].toString()}
-						type="number"
+						type="text"
 						onFocus={() => setFocus(true)}
 						onBlur={() => setFocus(false)}
 						onChange={(e) => {
