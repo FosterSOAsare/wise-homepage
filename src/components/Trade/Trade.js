@@ -25,7 +25,7 @@ const Trade = () => {
 		let parsedValue = parseFloat(value);
 
 		// Prevent seeing NaN after conversion if value is empty string''
-		if (!value || value === 0) {
+		if (!parsedValue || parsedValue === 0) {
 			setValue({ send: 0, receive: 0 });
 			return;
 		}
