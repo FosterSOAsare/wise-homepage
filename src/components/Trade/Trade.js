@@ -33,8 +33,8 @@ const Trade = () => {
 		// Do claculations with the rate and after that and set the values
 		// Also check to make sure that none of the fields receives a value less than 0
 		setValue({
-			send: type === "send" ? checkFullStops(value, parsedValue) : parsedValue + rate,
-			receive: type === "receive" ? checkFullStops(value, parsedValue) : parsedValue - rate > 0 ? parsedValue - rate : 0,
+			send: type === "send" ? checkFullStops(value, parsedValue) : (parsedValue + rate).toFixed(2),
+			receive: type === "receive" ? checkFullStops(value, parsedValue) : parsedValue - rate > 0 ? (parsedValue - rate).toFixed(2) : 0,
 		});
 	}
 	return (
