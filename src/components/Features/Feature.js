@@ -11,9 +11,9 @@ let iconStyle = {
 	fontSize: "20px",
 };
 
-const Feature = ({ heading, desc, available = true }) => {
+const Feature = ({ heading, desc, available = true, sx }) => {
 	return (
-		<Grid item md={3.7} xs={12} sx={{ ...style.feature, backgroundColor: available ? "white" : "#F3F6F8", opacity: available ? "1" : "0.4" }}>
+		<Grid item sm={5.7} md={3.7} xs={12} sx={{ ...style.feature, backgroundColor: available ? "white" : "#F3F6F8", opacity: available ? "1" : "0.4", ...sx }}>
 			{available ? <CheckIcon sx={{ ...iconStyle }} /> : <ClearIcon sx={{ ...iconStyle }} />}
 			<Typography variant="h3" sx={{ fontSize: "20px", fontWeight: "bold", textAlign: "center", marginBottom: "20px" }}>
 				{heading}

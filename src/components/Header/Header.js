@@ -17,7 +17,7 @@ const Header = ({ setShowMenu }) => {
 					<Grid item lg={4} sx={{ alignItems: "center", justifyContent: "flex-start", display: { xs: "none", ss: "flex" } }}>
 						<img src="https://wise.com/public-resources/assets/logos/wise/brand_logo_inverse.svg" alt="" style={{ marginRight: "25px" }} />
 						{!isMediumScreen && (
-							<Button variant="text" sx={{ ...style.button, ...style.hero__left__btn, color: "white" }}>
+							<Button variant="text" sx={{ ...style.button, ...style.hero__left__btn, color: "white" }} href="https://wise.com/">
 								Personal
 							</Button>
 						)}
@@ -45,7 +45,8 @@ const Header = ({ setShowMenu }) => {
 									color: "#02b4f9",
 									background: "transparent",
 								},
-							}}>
+							}}
+							href="https://wise.com/login/">
 							Login
 						</Button>
 						<Button
@@ -60,7 +61,8 @@ const Header = ({ setShowMenu }) => {
 									background: "#02b4f9",
 									color: "white",
 								},
-							}}>
+							}}
+							href="https://wise.com/register?profileType=BUSINESS">
 							Register
 						</Button>
 						{/* Menu Icon */}

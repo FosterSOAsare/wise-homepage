@@ -9,7 +9,7 @@ const featuresStyles = {
 	},
 
 	features__grid__container: {
-		width: { md: "80%", sm: "40%", xs: "350px" },
+		width: { md: "95%", sm: "90%", xs: "350px" },
 		height: "auto",
 		marginTop: "20px",
 		justifyContent: { md: "space-between", xs: "center" },

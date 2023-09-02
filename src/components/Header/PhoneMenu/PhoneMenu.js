@@ -30,10 +30,10 @@ const PhoneMenu = ({ setShowMenu, showMenu }) => {
 					))}
 				</Box>
 				<Box sx={style.phoneMenu__ctas}>
-					<Button variant="outlined" sx={style.phoneMenu__cta}>
+					<Button variant="outlined" sx={style.phoneMenu__cta} href='https://wise.com/login/'>
 						Log in
 					</Button>
-					<Button variant="contained" sx={style.phoneMenu__cta}>
+					<Button variant="contained" sx={style.phoneMenu__cta} href='https://wise.com/register?profileType=BUSINESS'>
 						Register
 					</Button>
 				</Box>

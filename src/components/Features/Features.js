@@ -23,8 +23,8 @@ const Features = () => {
 				</Button>
 			</Box>
 			<Grid container spacing={2} sx={style.features__grid__container}>
-				<Feature heading="Wise Business account" desc="Get an account for free and make payments with the real exchange rate in 70+ countries." />
-				<Feature desc="Get everything you need to bank abroad — including a sort code, IBAN, routing number, and more." heading="Banking alternative" />
+				<Feature heading="Wise Business account" desc="Get an account for free and make payments with the real exchange rate in 70+ countries." sx={{ marginRight: "auto" }} />
+				<Feature desc="Get everything you need to bank abroad — including a sort code, IBAN, routing number, and more." heading="Banking alternative" sx={{ marginLeft: "auto" }} />
 				<Feature heading="Debit card" desc="Unfortunately, this isn’t available where you’re registered. We’re working hard to make it happen" available={false} />
 			</Grid>
 			<a href="https://wise.com/register/?profileType=BUSINESS" target="_blank" rel="noreferrer">

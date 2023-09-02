@@ -56,9 +56,9 @@ const Pros = () => {
 				</Container>
 			</Box>
 			<Box sx={style.case__study}>
-				<Container maxWidth="lg" sx={{ height: { md: "300px", xs: "auto" }, paddingRight: 0 }}>
+				<Container maxWidth="lg" sx={{ height: { md: "300px", xs: "auto" }, width: "100%", paddingRight: { md: 0 } }}>
 					<Grid container sx={{ width: "100%", height: "100%", alignItems: "center", gap: "20px", justifyContent: "space-between" }}>
-						<Grid item md={6} sx={{ height: "100%", width: "100%" }} xs={12}>
+						<Grid item md={6} sx={{ height: { xs: "200px", sm: "350px", md: "100%" }, width: "100%" }} xs={12}>
 							<img src={AlternateAirLines} alt="" style={{ width: "100%", height: "100%" }} />
 						</Grid>
 						<Grid item md={5} sx={{ height: "70%" }} xs={12}>
